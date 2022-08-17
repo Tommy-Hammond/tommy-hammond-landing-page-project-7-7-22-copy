@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="landing-style.css">
+    <link rel="stylesheet" href="landing-style-copy.css">
     <title>Grand Fantasy Sumo!</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-smooth-scroll="true" data-bs-offset="30">
@@ -17,7 +17,7 @@
                 <!-- Logo Banner -See https://www.yachtclubgames.com/games/shovel-knight-treasure-trove -->
                 <div class="site-header-logo-banner">
                     <a href="#" class="block">
-                        <img class="head-logo" src="wireframing-and-assets/Fantasysumo.png">
+                        <img class="head-logo" src="wireframing-and-assets-copy/Fantasysumo.png">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -191,21 +191,21 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="wireframing-and-assets/hakuhosho.jpg" class="news-slide d-block w-100" alt="...">
+                            <img src="wireframing-and-assets-copy/hakuhosho.jpg" class="news-slide d-block w-100" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <h5>The end of an era?</h5>
                                 <p>Hakuhosho retires after dominant 20-year career. The sport says goodbye to a legendary yokozuna.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="wireframing-and-assets/enho.jpg" class="news-slide d-block w-100" alt="...">
+                            <img src="wireframing-and-assets-copy/enho.jpg" class="news-slide d-block w-100" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <h5>Will giant-slayer Enho return to the top ranks?</h5>
                                 <p>The exciting sumo of Enho has been sorely missed since he dropped to Juryo ranks. Time for a comeback?</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="wireframing-and-assets/terunofuji.jpg" class="news-slide d-block w-100" alt="...">
+                            <img src="wireframing-and-assets-copy/terunofuji.jpg" class="news-slide d-block w-100" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <h5>Everything you need to know about the July tournament!</h5>
                                 <p>From schedules to match results and standings, it's all here.</p>
@@ -230,7 +230,7 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center">
           <div class="col-7 col-md-8 d-flex align-items-center">
             <a href="#" class="mb-3 me-2">
-                <img class="head-logo" src="wireframing-and-assets/Fantasysumo.png">
+                <img class="head-logo" src="wireframing-and-assets-copy/Fantasysumo.png">
             </a>
             <span class="text-muted">© 2022 Grand Fantasy Sumo</span>
           </div>
@@ -256,5 +256,15 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script>
+        let wave = document.querySelector("svg path")
+        wave.addEventListener('mousemove', setWave)
+        function setWave(e) {
+            wave.setAttribute("d", `M0,192L120,176C240,${e.offsetY},480,${e.offsetX},720,122.7C960,117,1200,139,1320,149.3L1440,160L1440,320L1320,320C1200,320,960,${e.offsetY},720,320C480,320,${e.offsetX},320,120,320L0,320Z`);
+        };
+
+    </script>
+
 </body>
 </html>
